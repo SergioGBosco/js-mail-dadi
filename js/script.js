@@ -9,7 +9,32 @@ useremail = prompt(`Inserisci la tua e-mail per la verifica`)
 
 //genero un ciclo for per controllare che l'email inserita dall'utente è presente all'interno della lista degli invitati 
 
-for (let i = 0; i < email.length; i++) {
+let verify
 
+for (let i = 0; i < email.length; i++) {
+  if (useremail === email[i]) {
+    verify = true
+  }
+  else {
+    verify = false
+  }
 }
-console.log(useremail)
+
+console.log(verify)
+
+
+
+
+
+
+
+
+
+//Esercizo Dadi
+//Credo due variabili dove andranno inseriti i valori casuali generati 
+
+const randomPcNumber = Math.floor(Math.random() * 6 + 1);
+const randomUserNumber = Math.floor(Math.random() * 6 + 1);
+
+console.log(randomPcNumber)
+console.log(randomUserNumber)
