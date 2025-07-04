@@ -29,12 +29,21 @@ console.log(verify)
 
 
 
-
 //Esercizo Dadi
 //Credo due variabili dove andranno inseriti i valori casuali generati 
 
 const randomPcNumber = Math.floor(Math.random() * 6 + 1);
 const randomUserNumber = Math.floor(Math.random() * 6 + 1);
 
-console.log(randomPcNumber)
-console.log(randomUserNumber)
+//Credo la condizione di vittoria per uno del due partecipanti o nel caso di valori uguali di un pareggio
+
+if (randomPcNumber > randomUserNumber) {
+  console.log(`Il valore generato per il PC è di ${randomPcNumber}, il numero generato dall'USER è di ${randomUserNumber} \n IL VINCITORE è IL PC `);
+}
+else if (randomPcNumber < randomUserNumber) {
+  console.log(`Il valore generato per il PC è di ${randomPcNumber}, il numero generato dall'USER è di ${randomUserNumber} \n IL VINCITORE è L'USER `);
+}
+else {
+  console.log(`Il valore generato per il PC è di ${randomPcNumber}, il numero generato dall'USER è di ${randomUserNumber} \n Il risultato è un pareggio`);
+}
+
