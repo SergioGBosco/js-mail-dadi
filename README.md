@@ -28,3 +28,17 @@ javascript non fa nulla da solo, dobbiamo dirgli noi cosa vogliamo fare
 si ma noi cosa vogliamo fare?
 torniamo a scrivere in italiano
 proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
+
+Mail:
+1 - Creo un array con all'interno varie E-mail
+2 - chiedo all'utente di inserire la sua e-mail per verificare se è gia registrato e quindi può accedere
+3 - verifico l'email
+4 - terminata la verifica vedere il risultato e quindi comunicargli se può accedere o meno
+
+Dadi:
+1 - Genero un numero casuale per l'utente
+2 - Genero un numero casuale per il pc
+3 - confronto i risultati usciti tra utente e pc
+3.1 - ? Se il valore valore generato per l'utente è > del valore generato del pc, Ha vinto l'untente
+3.2 - ? Se il valore valore generato per l'utente è < del valore generato del pc, Ha vinto il pc
+3.3 - : ALtrimenti il risultato è di Parità.
