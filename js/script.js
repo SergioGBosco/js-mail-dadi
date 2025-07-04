@@ -11,17 +11,21 @@ useremail = prompt(`Inserisci la tua e-mail per la verifica`)
 
 let verify
 
+// ho aggiunto un altra variabile per andare a risolvere il problema di farmi vedere entrambi i risultati nel caso la prima fosse stata vera, cosi ogni volta che l'email corrispondono aumenta di 1 la somma, se la somma è diversa da 0 vuol dire che l'email è stata trovata 
+let sun = 0
+
 for (let i = 0; i < email.length; i++) {
   if (useremail === email[i]) {
+    sun += 1
+  }
+  if (sun != 0) {
     verify = true
   }
   else {
     verify = false
   }
 }
-
 console.log(verify)
-
 
 
 
