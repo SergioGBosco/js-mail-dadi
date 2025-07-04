@@ -9,29 +9,24 @@ useremail = prompt(`Inserisci la tua e-mail per la verifica`)
 
 //genero un ciclo for per controllare che l'email inserita dall'utente è presente all'interno della lista degli invitati 
 
-let verify
-
-// ho aggiunto un altra variabile per andare a risolvere il problema di farmi vedere entrambi i risultati nel caso la prima fosse stata vera, cosi ogni volta che l'email corrispondono aumenta di 1 la somma, se la somma è diversa da 0 vuol dire che l'email è stata trovata 
-let sun = 0
+let verify = false
 
 for (let i = 0; i < email.length; i++) {
   if (useremail === email[i]) {
-    sun += 1
-  }
-  if (sun != 0) {
     verify = true
   }
-  else {
-    verify = false
-  }
 }
+if (verify === true) {
+  verify = (`La tua e-mail corrisponde, puoi entrare`)
+}
+
+if (verify === false) {
+  verify = (`La tua E-mail non è stata trovata, Riprova`)
+}
+
+
+
 console.log(verify)
-
-
-
-
-
-
 
 //Esercizo Dadi
 //Credo due variabili dove andranno inseriti i valori casuali generati 
